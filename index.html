@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #456bb1;
+            color: rgb(0, 0, 0);
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer h2 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .about img {
+            border-radius: 50%;
+            margin-right: 15px;
+            float: left;
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contact-query {
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .contact-query h2 {
+        margin-bottom: 15px;
+    }
+
+    .contact-query form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-query label {
+        margin: 10px 0 5px;
+    }
+
+    .contact-query input, .contact-query textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-query button {
+        background: #16c01c;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contact-query button:hover {
+        background: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rashmitha's Portfolio</h1>
+        <p>Bachelor of Technology | Aspiring Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <!--<img src="https://via.placeholder.com/150" alt="Profile Picture"> -->
+            <p>I am currently pursuing my Bachelor of Technology (B.Tech) in Computer Science(AI&ML). I am passionate about software development, problem-solving, and exploring cutting-edge technologies. My primary focus is on Machine Learning, Web Development, Artificial Intelligence, and open-source contributions. In my free time, I enjoy participating in hackathons, coding challenges, and collaborating on exciting projects that make an impact. </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website:</strong> A personal portfolio showcasing my skills and projects.</li>
+                <li><strong>Handwritten Digit and Character Recognition:</strong> Uses CNNs to predict Handwritten digit and character.</li>
+                <li><strong>Case Study:</strong>AI in Fertilizer use for Precision Farming</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Profiles</h2>
+            <p>LinkedIn: <a href="https://linkedin.com/in/student" target="_blank">https://www.linkedin.com/in/rashmitha-varma-b761ba273</a></p>
+            <p>GitHub: <a href="https://github.com/student" target="_blank">https://github.com/rashmithavarma</a></p>
+        </section>
+    </div>
+    <section id="contact-query" class="contact-query">
+        <h2>Contact Query</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:student@example.com">rashmithavarma28@gmail.com</a></p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 1234 College Lane, Tech City, India</p>
+        <p>&copy; 2024 Student Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>
